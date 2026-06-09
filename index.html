@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>麻雀点数道場 - 法的書類</title>
+<style>
+:root {
+  --paper: #F7F1E3;
+  --paper2: #EDE4CC;
+  --ink: #1A0F00;
+  --ink-light: #4A3828;
+  --red: #B5282A;
+  --gold: #9A7200;
+  --border: #D4C4A8;
+}
+* { box-sizing: border-box; }
+body {
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
+  background: var(--paper);
+  color: var(--ink);
+  margin: 0;
+  padding: 40px 20px;
+  line-height: 1.8;
+}
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  background: white;
+  padding: 60px 40px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+header {
+  text-align: center;
+  border-bottom: 2px solid var(--gold);
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+header h1 {
+  font-size: 28px;
+  margin: 0;
+  color: var(--ink);
+}
+header p {
+  font-size: 13px;
+  color: var(--ink-light);
+  margin: 8px 0 0;
+}
+.docs {
+  display: grid;
+  gap: 16px;
+}
+.doc-card {
+  display: block;
+  padding: 24px;
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  text-decoration: none;
+  color: var(--ink);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.doc-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.doc-card h2 {
+  font-size: 20px;
+  margin: 0 0 8px;
+  color: var(--red);
+}
+.doc-card p {
+  font-size: 14px;
+  color: var(--ink-light);
+  margin: 0;
+}
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 12px;
+  color: var(--ink-light);
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>麻雀点数道場</h1>
+    <p>日本プロ麻雀連盟ルール準拠 / 点数計算練習アプリ</p>
+  </header>
+
+  <div class="docs">
+    <a class="doc-card" href="privacy.html">
+      <h2>プライバシーポリシー</h2>
+      <p>取得する情報、利用目的、第三者提供、お問い合わせについて</p>
+    </a>
+    <a class="doc-card" href="terms.html">
+      <h2>利用規約</h2>
+      <p>利用料金、App内課金、禁止事項、免責、準拠法について</p>
+    </a>
+  </div>
+
+  <footer>
+    <p>© 2026 麻雀点数道場 運営者</p>
+  </footer>
+</div>
+</body>
+</html>
